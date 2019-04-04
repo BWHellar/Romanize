@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
 // Primary Function //
   function romanize(num){
-    // Variables //
+   // Variables //
     var roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
     var equiv = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
     var romanNum = "";
@@ -19,7 +19,7 @@ $(document).ready(function(){
       return '';
     }
     if (num > 3999){
-      return 'Too Large';
+      return 'THIS IS NOT ROMAN!';
     }
     // Loop Logic //
     for (i = 0; i <= equiv.length; i++){

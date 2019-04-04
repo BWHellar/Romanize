@@ -29,6 +29,16 @@ body {
   display: flex; justify-content: center;
   background-color: #9E6DAFbb;
   border-radius: 20px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  margin: 20px;
+}
+.nav-item:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  box-shadow: 5px 10px #7851a9;
+  border-radius: 20px;
+  background-color: black;
 }
 .nav-item a{
   color: #942017;
@@ -37,9 +47,9 @@ body {
 .nav-item a:hover{
   color: #9E6DAF;
 }
+
 .nav-pills {
   display: flex; justify-content: center;
-
 }
 
 /* For input and results*/
@@ -53,6 +63,7 @@ body {
   text-align: center;
   overflow-wrap: break-word;
 }
+
 input{
   height: 50px;
   background-color: #9E6DAF99;
