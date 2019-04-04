@@ -1,45 +1,7 @@
-.jumbotron h1 {
-  color: white;
-  text-align: center;
-}
-.jumbotron{
-  background-image: url("../img/thumb.gif");
-  background-size: cover;
-  background-position: center;
-}
+/* For large scale adjustments */
 .container{
   text-align: center;
-}
-input{
-  height: 50px;
-  background-color: #9E6DAF;
-  border-radius: 25px;
-}
-#num{
-  font-size: 2em;
-  text-align: center;
-}
-#result{
-  font-size: 5em;
-}
-
-.sidenav {
-  float: left;
-  width: 75px;
-  font-size: 15px;
-  background-color: #B596BF;
-  text-align: center;
-  position: fixed;
-  height: 100%;
-  margin-top: -275px;
-}
-.sidenav a {
-  padding: 25px 6px 6px 1px;
-  text-decoration: none;
-  font-size: 12px;
-  color: black;
-  display: block;
-  text-align: center;
+  position: relative;
 }
 body {
   background-image: url("../img/SPQR.png");
@@ -49,4 +11,74 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+/* For Jumbotron */
+.jumbotron h1 {
+  color: white;
+  text-align: center;
+}
+.jumbotron{
+  background-image: url("../img/thumb.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* For Nav Items and Links */
+.nav-item{
+  display: flex; justify-content: center;
+  background-color: #9E6DAFbb;
+  border-radius: 20px;
+}
+.nav-item a{
+  color: #942017;
+  font-weight: bolder;
+}
+.nav-item a:hover{
+  color: #9E6DAF;
+}
+.nav-pills {
+  display: flex; justify-content: center;
+
+}
+
+/* For input and results*/
+#num{
+  font-size: 2em;
+  text-align: center;
+}
+#result{
+  font-size: 20em;
+  text-shadow: 10px 10px #58037688;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+input{
+  height: 50px;
+  background-color: #9E6DAF99;
+  border-radius: 25px;
+}
+
+/* For word adjustments */
+h2{
+  color: black;
+  text-shadow: 5px 5px #58037688;
+}
+
+/* For Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #942017;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 125px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9E6DAF99;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7851a9;
+  border-radius: 25px;
 }
